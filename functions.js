@@ -5,7 +5,8 @@ $(document).ready(function() {
         $.ajax({
             type: 'POST',
             Headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
             },
             url: 'https://comp4537-lab2-1n69.onrender.com/chatbot',
             data: {
