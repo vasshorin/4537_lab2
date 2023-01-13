@@ -4,12 +4,6 @@ $(document).ready(function() {
         const message = $('#chatbot-input').val();
         $.ajax({
             type: 'POST',
-            Headers: {
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': 'http://numbersapi.com',
-                'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-                'Access-Control-Allow-Headers': 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With',
-            },
             url: 'https://comp4537-lab2-1n69.onrender.com/chatbot',
             data: {
                 message: message
